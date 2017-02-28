@@ -1,0 +1,89 @@
+body {
+  background-color: #b9bfbc;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 0vh 0.5rem;
+  text-align: center;
+}
+
+a {
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
+
+$header-bg: #292c2f;
+$subnav-link-padding: 0.9rem;
+$subnav-font-size: 0.75rem;
+$subnav-link-opacity: 0.15;
+$header-height: 1rem;
+$transition: all .35s ease-in-out;
+
+.header {
+  text-align: center;
+  background: $header-bg;
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  padding-top: $header-height;
+  padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
+
+  .headline {
+    color: #ffe;
+  }
+}
+
+.header-subnav {
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+
+  li {
+    float: none;
+    display: inline-block;
+
+    a {
+      padding: $subnav-link-padding 1rem;
+      font-size: $subnav-font-size;
+      color: #ffe;
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: $transition;
+
+      &.is-active {
+        background: rgba(250,250,250,$subnav-link-opacity);
+      }
+
+      &:hover {
+        background: rgba(250,250,250,$subnav-link-opacity);
+        transition: $transition;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 3.5rem;
+  p {
+    &.contact {
+      color: #f06848;
+      font-size: 1rem;
+      margin: 0 0 1rem;
+      text-align: right
+    }
+  }
+}
