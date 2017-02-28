@@ -1,5 +1,11 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
+- name: ATM Machine
+  description: Ruby ATM with withdraw and deposit functions.
+  github: https://github.com/fabianlundgren/atm_machine
 
-- name: FizzBuzz
-  description: My first Test driven ruby project
+- name: FizzBuzz JS
+  description: FizzBuzz Game, built with Javascript.
+  github: https://github.com/fabianlundgren/fizz_buzz_js
+
+- name: BMI Calculator
+  description: Works with both metric and imperial!
+  github: https://github.com/fabianlundgren/BMI

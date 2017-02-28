@@ -1,2 +1,12 @@
-.row
-  .col.s2
+.projects
+  .row.grid
+    %h3.grid Previous Projects
+    .large-12.columns{"data-equalize-by-row" => "true", "data-equalizer" => ""}
+      .row
+      - data.projects.each do |project|
+        .large-4.columns
+          .callout.column{"data-equalizer-watch" => ""}
+            %h5.subheader= project[:name]
+            %p= project[:description]
+            - if project[:github] != nil
+              %a{:href => "#{project[:github]}", :target => "_new"} Link to Github
