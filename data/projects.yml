@@ -1,11 +1,11 @@
 - name: ATM Machine
-  description: Ruby ATM with withdraw and deposit functions.
+  description: An ATM built with Ruby, having a withdraw and a deposit method.
   github: https://github.com/fabianlundgren/atm_machine
 
 - name: FizzBuzz JS
-  description: FizzBuzz Game, built with Javascript.
+  description: The classic game of FizzBuzz, built with Javascript.
   github: https://github.com/fabianlundgren/fizz_buzz_js
 
 - name: BMI Calculator
-  description: Works with both metric and imperial!
+  description: Calculates your BMI using both the metric and the imperial system!
   github: https://github.com/fabianlundgren/BMI
