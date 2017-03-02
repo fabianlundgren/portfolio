@@ -33,21 +33,16 @@ end
 #     "Helping"
 #   end
 # end
-
+require 'extensions/build_cleaner'
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
   # activate :minify_css
-
-  activate :deploy do |deploy|
-    deploy.build_before = true
-    deploy.deploy_method = :git
-
-  require 'extensions/build_cleaner'
-
-    configure :build do
-    activate :relative_assets
-    activate :build_cleaner
-  end
+  activate :relative_assets
+  activate :build_cleaner
 end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
 end
